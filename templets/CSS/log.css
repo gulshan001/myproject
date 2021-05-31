@@ -1,0 +1,106 @@
+#main{
+	height: 300px;
+	width: 500px;
+	border-style: solid;
+	border-color: #697F9F;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+#dinput{
+	height: 150px;
+	width: auto;
+	border-bottom-style:solid;
+	border-bottom-color: darkgray;
+}
+#left{
+	height: 150px;
+	width: 240px;
+	
+	
+	float: left;
+}
+#right{
+	height: 150px;
+	width: 240px;
+	
+	
+	float: right;
+}
+#log{
+	height: 150px;
+	width: 120px;
+	text-align: center;
+	margin-top:10px;
+	font-size: 50px;
+	float: left;
+	font-family: Times, "Times New Roman", "serif";
+}
+#base{
+	height: 150px;
+	width: 120px;
+	margin-top: 80px;
+	float: right;
+}
+#sub{
+	height: 150px;
+	width: auto;
+	
+}
+#sbmit{
+	float: left;
+	margin-left: 40px;
+	margin-top: 50px;	
+}
+#clr{
+	float: right;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+#b:hover{
+	transition: 0.2s;
+	border-style: solid;
+	border-radius: 10px;
+}
+#n:hover{
+	transition: 0.2s;
+	border-style: solid;
+	border-radius: 10px;
+}
+#sbt{
+	background-color: white; 
+  	color: black; 
+  	border: 2px solid #555555;
+}
+#sbt:hover{
+	transition: 0.5s;
+	background-color:blueviolet;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+#btn{
+	background-color: white; 
+  	color: black; 
+  	border: 2px solid #555555;
+}
+#btn:hover{
+	transition: 0.5s;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	background-color:blueviolet;
+	border-radius: 10px;
+}
+#output{
+    height:70px;
+    width: 500px;
+    text-align: center;
+    background-color: #e5eecc;
+    border-style: solid;
+	border-color: #697F9F;
+    margin-left:-2px;
+    display:none;
+    font-size:25px;
+    color:green;
+}
+

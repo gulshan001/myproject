@@ -1,0 +1,53 @@
+<!doctype html>
+{% load static %}
+<html>
+<title>logtemp</title>
+
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="{%static 'CSS/log.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body bgcolor="">
+	<form method="post" action="logEvaluate">
+		{% csrf_token %}
+		<div id="main">
+		<div id="dinput">
+			<div id="left">
+			<div id="log">log</div>
+			<div id="base"><input type="text" id="b" name="b" required placeholder="Base" style="width: 70px; height: 30px; font-size: 20px;"></div>
+			</div>
+			<div id="right"><input type="text" id="n" name="a" required placeholder="Exponent" style="margin-top: 30px; margin-left: 10px; height: 30px; width: 200px; font-size: 20px"></div>
+		</div>
+		<div id="sub">
+			<div id="sbmit"><input type="submit" id="sbt" value="Evaluate"  style="height: 50px;width: 100px;"></div>
+			<div id="clr"><input type="button" id="btn" value="Clear" style="height: 50px;width: 100px;"></div>
+		</div>
+		<div id="output">
+			Output  {{result}} {{message}}
+		</div>
+	</div>
+	</form>
+	<script>
+		$("#output").slideDown("slow");
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("#b").val('');
+				$("#n").val('');
+
+			});
+			$("#sbt").click(function(){
+				$("#output").slideDown("slow");
+			});
+			$('#b').keyup(function () {
+    		this.value = this.value.replace(/[^0-9\.]/g,'');
+			});
+			$('#n').keyup(function () {
+    		this.value = this.value.replace(/[^0-9\.]/g,'');
+			});
+		});
+	</script>
+</body>
+</html>

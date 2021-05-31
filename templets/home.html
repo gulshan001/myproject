@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="logEvaluate" method="post">
+    {% csrf_token %}
+    <h2>Program to find out log value on given base.</h2>
+    <hr/>
+    Enter log value <input type="text" name="a" required>
+    <hr/>
+    Enter log base <input type="text" name="b" required>
+    <hr/>
+    <input type="submit" value="Evaluate">
+    <hr/>
+    <hr/>
+<h2>Output</h2>
+<hr/>
+<h2>{{result}}</h2>
+    <h2 style="color: red;">{{message}}</h2>
+<hr/>
+</form>
+</body>
+</html>
